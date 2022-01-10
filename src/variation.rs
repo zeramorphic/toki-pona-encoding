@@ -8,6 +8,12 @@ pub enum Variation {
     Hanzi,
 }
 
+impl Default for Variation {
+    fn default() -> Self {
+        Self::Default
+    }
+}
+
 /// Converts from variation codes such as "tp_ZH".
 impl<'a> TryFrom<&'a str> for Variation {
     type Error = ();
