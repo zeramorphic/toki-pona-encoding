@@ -1,7 +1,7 @@
 /// Each variation is a specific orthographic system for toki pona.
 /// These orthographic systems may each contain their own options for
 /// customising the text that is encoded.
-#[derive(Debug, PartialEq, Eq, Hash)]
+#[derive(Debug, Copy, Clone, PartialEq, Eq, Hash)]
 pub enum Variation {
     Default,
     Tipunsin,
